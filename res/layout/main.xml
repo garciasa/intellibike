@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+     
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dip"
+            android:orientation="horizontal" >
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+            	
+                <TextView
+                    android:id="@+id/porcentageBatt"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"  
+                    android:gravity="center"         
+                    android:text="100%"
+                    android:textSize="25dip" />
+                                              
+            	<ImageView  
+					android:id="@+id/battery"   
+					android:layout_width="fill_parent"  
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:contentDescription="Battery monitor"
+					android:src="@drawable/stat_sys_battery"/>
+            	
+            	<TextView
+                    android:id="@+id/vots"
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="52.4 V"
+                    android:textSize="25dip" />
+                
+            	
+                
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:gravity="right"
+                android:text="0.0"
+                android:textSize="90dip" />
+
+            <TextView
+                android:id="@+id/speedunits"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text="Km/h"
+                android:textSize="20dip" />
+        </LinearLayout>
+		<!-- km/h -->
+        
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                
+                <TextView
+                    android:id="@+id/amps"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="12.4"
+                    android:textSize="50dip" />
+
+                <TextView
+                    android:id="@+id/ampsunits"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:gravity="left"
+                    android:text="Amp/h"
+                    android:textSize="15dip" />
+                
+                <TextView
+                    android:id="@+id/watts"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="269"
+                    android:textSize="50dip" />
+
+                <TextView
+                    android:id="@+id/wattunits"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:text="Watt/h"
+                    android:textSize="15dp" />
+                
+                
+            </LinearLayout>
+            <!-- Amp - Watt -->
+    
+	     <TextView
+	          android:id="@+id/speedmeter"
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	          android:paddingTop="70dp"
+	          android:gravity="center"
+	          android:text="00000 km"
+	          android:textSize="50dp" />
+	
+	 
+	      <TextView
+	          android:id="@+id/chronometer"
+	          android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	          android:gravity="center"
+	          android:paddingTop="10dp"
+	          android:text="00:00:00"
+	          android:textSize="50dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
